@@ -1185,45 +1185,101 @@ section.resume-section .resume-item .resume-date {
     }
 }
 
-#contact {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background: #f9f9f9;
-    border-radius: 8px;
+/* Seção de contato - você pode ajustar o padding se quiser mais/menos espaço */
+.contatos-text-gern {
+    padding: 60px 0;
+    /* Exemplo de espaçamento vertical */
 }
 
-#contact h2 {
+/* Título e borda de separação */
+.contact-cont h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.heading-border-light {
+    width: 60px;
+    height: 3px;
+    background-color: #2196f3;
+    /* Exemplo de cor */
+    margin-bottom: 1.5rem;
+}
+
+/* Texto padrão */
+.text-p {
+    margin-bottom: 1rem;
+    /* Em vez de <br>, use margens */
+    color: #333;
+    /* Ajuste a cor conforme seu layout */
+}
+
+/* Botão de download do currículo */
+.download-btn {
+    background-color: #00aeff;
+    color: #000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid #fff;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #15146e;
+    border-color: #07a4ff;
+}
+
+/* Blocos de descrição (Endereço, Telefone, Email) */
+.contact-box-desc {
+    margin-bottom: 30px;
+}
+
+.contact-box-desc h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Ajuste de cor do ícone (se a classe cl-atlantis não estiver definida) */
+.cl-atlantis {
+    color: #2196f3;
+    /* ou outro tom que queira */
+}
+
+/* Ajuste do .address-details-f, se precisar */
+.address-details-f a {
+    color: #333;
+    text-decoration: none;
+}
+
+.address-details-f a:hover {
+    color: #2196f3;
+}
+
+/* Lista de ícones sociais */
+.social-icon-f {
+    padding-left: 0;
+    list-style: none;
+}
+
+.social-icon-f li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icon-f li i {
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    border: 2px solid #2196f3;
     text-align: center;
-    margin-bottom: 20px;
+    border-radius: 50%;
 }
 
-#contact form {
-    display: flex;
-    flex-direction: column;
-}
-
-#contact label {
-    margin-bottom: 5px;
-}
-
-#contact input,
-#contact textarea {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-
-#contact button {
-    padding: 10px;
-    background: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-#contact button:hover {
-    background: #0056b3;
+/* Exemplo de ajuste para centralizar verticalmente
+     se "my-auto" não estiver fazendo o efeito desejado */
+.row.my-auto {
+    align-items: center;
+    /* ou .align-items-start, .align-items-end etc. */
 }
